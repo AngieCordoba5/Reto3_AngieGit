@@ -53,6 +53,9 @@ public class ServiciosCliente implements Serializable{
                 if(client.getPassword()!=null){
                     e.get().setPassword(client.getPassword());
                 }
+                if(client.getEmail()!=null){
+                    e.get().setEmail(client.getEmail());
+                }
                 metodosCrud.save(e.get());
                 return e.get();
             }else{
