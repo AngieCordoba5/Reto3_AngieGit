@@ -28,9 +28,9 @@ public class Cabin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
     private Integer id;
+    private String name;
     private String brand;
     private Integer rooms;
-    private String name;
     private String description;
     
     
